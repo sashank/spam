@@ -1,0 +1,26 @@
+# Requirements for Simple ML Pipeline Tutorial
+# Exercise 5.2A - Simplified Version
+
+# Core data science libraries
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Machine learning
+scikit-learn>=1.0.0
+
+# Handling imbalanced data
+imbalanced-learn>=0.9.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Model persistence
+joblib>=1.1.0
+
+# Jupyter environment
+jupyter>=1.0.0
+notebook>=6.4.0
+
+# Optional: IPython for better notebook experience
+ipython>=7.30.0

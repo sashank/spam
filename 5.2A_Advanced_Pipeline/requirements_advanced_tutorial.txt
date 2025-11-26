@@ -1,0 +1,87 @@
+# Exercise 5.2A.1: Advanced ML Pipeline - Python Dependencies
+# 
+# Install with: pip install -r requirements_advanced_tutorial.txt
+#
+# These extend the basic requirements from Exercise 5.2A with additional
+# libraries for production monitoring, drift detection, and A/B testing.
+
+# ============================================================================
+# CORE ML LIBRARIES (from 5.2A)
+# ============================================================================
+pandas>=1.5.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+imbalanced-learn>=0.10.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+joblib>=1.2.0
+
+# ============================================================================
+# ADVANCED FEATURES (NEW for 5.2A.1)
+# ============================================================================
+
+# Statistical Tests for Drift Detection
+scipy>=1.10.0                    # Kolmogorov-Smirnov test, Chi-square test
+
+# Progress Tracking for Time Series Simulation
+tqdm>=4.64.0                     # Progress bars for long-running operations
+
+# ============================================================================
+# OPTIONAL BUT RECOMMENDED
+# ============================================================================
+
+# Jupyter Support
+jupyter>=1.0.0
+jupyterlab>=3.6.0
+ipywidgets>=8.0.0               # Interactive widgets for notebooks
+
+# Enhanced Visualizations
+plotly>=5.13.0                  # Interactive plots (optional alternative)
+
+# Statistical Analysis
+statsmodels>=0.13.0             # Additional statistical tests (optional)
+
+# ============================================================================
+# DEVELOPMENT TOOLS (Optional)
+# ============================================================================
+
+# Code Quality
+black>=23.0.0                   # Code formatting
+flake8>=6.0.0                   # Linting
+
+# Testing
+pytest>=7.2.0                   # Unit testing framework
+
+# ============================================================================
+# NOTES
+# ============================================================================
+#
+# Minimum Python Version: 3.8+
+# Recommended Python Version: 3.10+
+#
+# Installation Steps:
+#   1. Create virtual environment: python -m venv .venv
+#   2. Activate: .\.venv\Scripts\Activate.ps1 (Windows) or source .venv/bin/activate (Linux/Mac)
+#   3. Install: pip install -r requirements_advanced_tutorial.txt
+#   4. Verify: python -c "import scipy, tqdm; print('All packages installed!')"
+#
+# Approximate Install Size: ~500 MB
+# Estimated Install Time: 2-5 minutes (depending on network speed)
+#
+# ============================================================================
+# TROUBLESHOOTING
+# ============================================================================
+#
+# If scipy installation fails on Windows:
+#   - Install Microsoft Visual C++ Build Tools
+#   - Or use: pip install scipy --only-binary :all:
+#
+# If tqdm not working in Jupyter:
+#   - Restart kernel after installation
+#   - Or use: from tqdm.notebook import tqdm
+#
+# For Apple Silicon (M1/M2) Macs:
+#   - Use miniforge instead of Anaconda
+#   - Or: pip install --upgrade --force-reinstall scipy
+#
+# ============================================================================
