@@ -1,0 +1,3 @@
+# Minimal dependencies. Uses Python standard library `email` and `re` modules.
+# Add packages here if you want plotting or richer parsing later.
+
